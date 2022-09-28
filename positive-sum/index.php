@@ -5,7 +5,7 @@ $numbers = [
     [10, -8, 5, 0, -1, 25],
     [5, -4, 52, 1, -4, 50],
 ];
-$sum = 0;
+$sum = [];
 
 function positive($var){
     return $var > 0;
@@ -13,8 +13,8 @@ function positive($var){
 
 foreach ($numbers as $key => $value) {
     $positiveArray = array_filter($value, "positive");
-    $sum += (int)array_sum($positiveArray);
+    $sum = array_merge($sum, $positiveArray) ;
 }
 
-print($sum);
+print_r(array_sum($sum));
 
