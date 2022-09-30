@@ -8,7 +8,7 @@ $films = [
 ];
 
 function print_info($item, $key){
-    echo "$key. \nProducer $item[0]\n Date $item[1]\n\n";
+    echo "<span style=\"background: yellow; color: blue;\"> $key. \nProducer $item[0]\n Date $item[1]\n</span><br>";
 }
 
 //name
