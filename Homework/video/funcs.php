@@ -10,6 +10,7 @@ $students = [
 ];
 
 print_r(array_combine($classes, $students));
+print("\n");
 
 //2
 print("2 \n");
@@ -18,6 +19,7 @@ $names1 = array("Igor", "Oleg", "Slava");
 $names2 = array("Slava", "Igor", "Alexa");
 
 print_r(array_intersect($names1, $names2));
+print("\n");
 
 //3
 print("3 \n");
@@ -26,6 +28,7 @@ $user1 = array('id'  => 1, 'red'  => 2, 'age'  => 3, 'fav-color' => "red");
 $user2 = array('age' => 5, 'hobby' => "Programming", 'yellow' => 7, 'id' => 8);
 
 var_dump(array_intersect_key($user1, $user2));
+print("\n");
 
 //4
 print("4 \n");
@@ -43,3 +46,4 @@ function test_print($item2, $key)
 }
 
 array_walk($stuff, "test_print");
+print("\n");
